@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i');
+
+:root {
+    --menu-background: #343e48;
+    --grey: #686f77;
+    --yellow: #ecc64b;
+    --green: #0b9ea6;
+    --red: #f26667;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h2 {
+    margin: 16px auto;
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: center;
+    max-width: 800px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+li {
+    margin: 8px 0;
+}
+
+.navbar {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    background-color: var(--menu-background);
+}
+
+.navbar li {
+    margin: 0 auto;
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+}
+
+.navbar a {
+    display: block;
+    padding: 16px 15px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+    text-shadow:1px 0px rgba(black,.4);
+    color: var(--grey);
+    letter-spacing:.2em;
+    text-decoration: none;
+    transition: color 200ms;
+    transform-style: preserve-3d;
+}
+.navbar a:hover {
+    background-color: var(--grey);
+    color: white;
+}
+
+.smart-software , .landing-p {
+    color: white;
+    text-shadow: 4px 4px 4px #000000;
+    text-align: center;
+    line-height: 40px;
+}
+
+.landing {
+    height: 94vh;
+    background: url(https://images.unsplash.com/photo-1516116216624-53e697fedbea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.smart-software {
+    font-size: 2.6rem;
+    font-weight: 700;
+}
+
+.landing-p {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+section {
+    padding: 160px 40px;
+    text-align: center;
+}
+
+.dark-section {
+    background-color: #171717;
+    color: white;
+}
+
+.boton-hablemos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    height: 50px;
+    width: 120px;
+    border: 1px solid #171717;
+    color: black;
+    text-decoration: none;
+}.boton-hablemos:visited {
+    color: black;
+}.boton-hablemos:hover {
+    background-color: #171717;
+    color: white;
+}
+
+.ubicaciones {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.ubicaciones div p {
+    width: 300px;
+}
