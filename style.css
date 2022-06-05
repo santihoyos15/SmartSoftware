@@ -3,9 +3,6 @@
 :root {
     --menu-background: #343e48;
     --grey: #686f77;
-    --yellow: #ecc64b;
-    --green: #0b9ea6;
-    --red: #f26667;
 }
 
 * {
@@ -89,16 +86,28 @@ li {
 .landing-2 {
     background-image: url(https://images.pexels.com/photos/3205570/pexels-photo-3205570.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
 }
+.landing-3 {
+    background-image: url(https://images.pexels.com/photos/8145352/pexels-photo-8145352.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+
+.landing-5 {
+    background-image: url(https://images.pexels.com/photos/376533/pexels-photo-376533.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1|);
+    display: flex;
+    justify-content: flex-start;
+}
 
 .landing-heading {
     font-size: 2.6rem;
     font-weight: 700;
     z-index: 1;
+    padding: 0 40px;
 }
 
 .landing-p {
     font-size: 1.2rem;
     font-weight: 400;
+    color: white;
+    padding: 0 40px;
 }
 
 .main-section {
@@ -147,4 +156,42 @@ li {
 
 .flex-section article {
     max-width: 50vw;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+
+.about-section article h2{
+    text-align: left;
+}
+
+.about-section article p{
+    max-width: 600px;
+    text-align: justify;
+}
+
+.about-section article:nth-child(odd) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center; 
+}
+.about-section article:nth-child(even) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center; 
+}
+
+.our-story {
+    max-width: 600px;
+}
+
+.our-story p {
+    line-height: 1;
+    text-align: justify
 }
