@@ -16,7 +16,7 @@
 }
 
 h2 {
-    margin: 16px auto;
+    margin: 20px auto;
     font-weight: 500;
     font-size: 2rem;
     text-align: center;
@@ -65,7 +65,7 @@ li {
     color: white;
 }
 
-.smart-software , .landing-p {
+.landing-heading, .landing-p {
     color: white;
     text-shadow: 4px 4px 4px #000000;
     text-align: center;
@@ -74,19 +74,26 @@ li {
 
 .landing {
     height: 94vh;
-    background: url(https://images.unsplash.com/photo-1516116216624-53e697fedbea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
     background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.smart-software {
+.landing-1 {
+    background-image: url(https://images.unsplash.com/photo-1516116216624-53e697fedbea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80);
+}
+.landing-2 {
+    background-image: url(https://images.pexels.com/photos/3205570/pexels-photo-3205570.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+
+.landing-heading {
     font-size: 2.6rem;
     font-weight: 700;
+    z-index: 1;
 }
 
 .landing-p {
@@ -94,7 +101,7 @@ li {
     font-weight: 400;
 }
 
-section {
+.main-section {
     padding: 160px 40px;
     text-align: center;
 }
@@ -129,4 +136,15 @@ section {
 }
 .ubicaciones div p {
     width: 300px;
+}
+
+.flex-section {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flex-section article {
+    max-width: 50vw;
 }
