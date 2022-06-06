@@ -70,7 +70,7 @@ li {
 }
 
 .landing {
-    height: 94vh;
+    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -88,6 +88,9 @@ li {
 }
 .landing-3 {
     background-image: url(https://images.pexels.com/photos/8145352/pexels-photo-8145352.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+.landing-4 {
+    background-image: url(https://images.pexels.com/photos/4245826/pexels-photo-4245826.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
 }
 
 .landing-5 {
@@ -191,7 +194,59 @@ li {
     max-width: 600px;
 }
 
+.our-story h1 {
+    text-align: left;
+}
+
 .our-story p {
     line-height: 1;
-    text-align: justify
+    text-align: left; 
+}
+
+.landing-4 div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-input {
+    width: 300px;
+    height: 38px;
+    border: none;
+    border-radius: 8px;
+    padding: 0 8px;
+    font-size: 1rem;
+}
+.search-box-container {
+    --button-width: 300px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 16px 0px 30px 0px; 
+}
+
+.search-box {
+    height: 50px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    background-color: #EEEAF2;
+    padding: 0 calc(var(--button-width) + 8px) 0 16px;
+}
+
+.search-box:focus {
+    outline: 1px solid var(--menu-background);
+}
+
+.search-box-button {
+    cursor: pointer;
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    right: 0;
+    border-radius: 0 8px 8px 0;
+    border: none;
+    background-color: var(--menu-background);
+    font-size: 20px;
 }
